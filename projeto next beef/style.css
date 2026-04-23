@@ -397,3 +397,137 @@ body {
 .produto-card:nth-child(2) img {
   object-position: center 5%;
 }
+/* ================= PARCEIROS ================= */
+.parceiros {
+  padding: 60px 60px;
+  background-color: #0b0b0b;
+
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* ===== TÍTULO ===== */
+.parceiros-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  margin-bottom: 40px;
+}
+
+.parceiros-titulo h2 {
+  font-family: 'Cinzel', serif;
+  color: #d4af37;
+  font-size: 28px;
+}
+
+/* ===== LOGOS ===== */
+.parceiros-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; /* antes era 60px */
+  flex-wrap: wrap;
+}
+
+/* ===== IMAGENS ===== */
+.parceiros-logos img {
+  height: 200px;
+  width: auto;
+  object-fit: contain;
+
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.parceiros-logos img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+/* ================= CONTATO ================= */
+.contato {
+  padding: 80px 60px;
+  background: #0b0b0b;
+
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+/* TÍTULO */
+.contato-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  margin-bottom: 50px;
+}
+
+.contato-titulo h2 {
+  font-family: 'Cinzel', serif;
+  color: #d4af37;
+  font-size: 32px;
+}
+
+
+/* CONTAINER */
+.contato-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+
+/* ESQUERDA */
+.contato-info {
+  flex: 1;
+}
+
+.contato-detalhes {
+  margin-top: 30px;
+  color: #ccc;
+}
+
+.contato-detalhes p {
+  margin-bottom: 10px;
+}
+
+
+/* FORMULÁRIO */
+.contato-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contato-form input,
+.contato-form textarea {
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  padding: 12px;
+  color: #fff;
+
+  outline: none;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  border-color: #d4af37;
+}
+
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a0a0a;
+
+  color: #aaa;
+  font-size: 14px;
+
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}

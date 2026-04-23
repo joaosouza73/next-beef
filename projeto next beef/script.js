@@ -61,3 +61,44 @@ navLinks.forEach(link => {
   });
 
 });
+// ================= SCROLL SUAVE PERSONALIZADO =================
+
+function scrollSuave(target, duration) {
+  const targetPosition = target.offsetTop - 100; // ajuste do header
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition;
+
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+
+    const run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+ function ease(t, b, c, d) {
+  return c * (t / d) + b; // movimento linear (sem delay)
+}
+
+  requestAnimationFrame(animation);
+}
+
+
+// Aplica nos links do menu
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+
+    if (target) {
+      scrollSuave(target, 1170); // controla velocidade aqui
+    }
+
+  });
+});

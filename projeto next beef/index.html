@@ -38,10 +38,10 @@
     <nav class="nav" id="nav">
       <ul>
         <!-- Cada item é uma seção do site -->
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Produtos</a></li>
-        <li><a href="#">Parceiros</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#parceiros">Parceiros</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
 
@@ -68,7 +68,7 @@
 </section>
 
 <!-- ================= SOBRE NÓS ================= -->
-<section class="sobre">
+<section class="sobre" id="sobre">
 
   <!-- Título -->
   <div class="sobre-titulo">
@@ -81,14 +81,49 @@
   <div class="sobre-container">
 
     <!-- Texto -->
-    <div class="sobre-texto">
-      <p>
-        A NEXTBEEF é uma empresa especializada na representação, consultoria e comércio de proteínas animais, atuando com excelência desde 2004. Oferecemos uma ampla variedade de produtos, incluindo bovinos, suínos, aves, pescados e laticínios, atendendo com eficiência diversos segmentos como indústrias, cozinhas industriais, atacado, varejo e food service em todo o estado de São Paulo.
-        Contamos com uma sólida rede de parceiros comerciais em todo o Brasil, o que nos permite garantir qualidade, competitividade e confiabilidade em cada negociação. Nosso compromisso é construir relacionamentos duradouros, baseados na ética, transparência e confiança mútua, assegurando que todos os envolvidos possam oferecer os melhores produtos aos seus clientes.
-        Além disso, prezamos por uma logística eficiente e uma prestação de serviços de alto padrão, garantindo agilidade e segurança em todas as etapas do processo.
-        Na NEXTBEEF, trabalhamos para conectar fornecedores e clientes com soluções completas e personalizadas, sempre focados em excelência e satisfação.
-        Consulte-nos para mais informações e descubra como podemos agregar valor ao seu negócio.
-      </p>
+   <div class="sobre-texto">
+
+        <p>
+          A NEXTBEEF é uma empresa especializada na representação, consultoria e comércio de proteínas animais, atuando com excelência desde 2004.
+        </p>
+
+        <p>
+          Oferecemos uma ampla variedade de produtos, incluindo bovinos, suínos, aves, pescados e laticínios, atendendo com eficiência indústrias, cozinhas industriais, atacado, varejo e food service em todo o estado de São Paulo.
+        </p>
+
+        <p>
+          Contamos com uma sólida rede de parceiros comerciais em todo o Brasil, garantindo qualidade, competitividade e confiabilidade em cada negociação.
+        </p>
+
+        <p>
+          Nosso compromisso é construir relacionamentos duradouros, baseados na ética, transparência e confiança, assegurando excelência em todas as etapas.
+        </p>
+
+        <!-- SLOGAN -->
+        <p class="slogan">
+          “Parcerias sólidas, resultados consistentes.”
+        </p>
+
+        <hr>
+
+        <!-- MISSÃO -->
+        <h3>Missão</h3>
+        <p>
+          Conectar fornecedores e clientes com soluções eficientes e de qualidade em proteínas animais.
+        </p>
+
+        <!-- VISÃO -->
+        <h3>Visão</h3>
+        <p>
+          Ser referência no mercado de proteínas animais, reconhecida pela excelência e confiança.
+        </p>
+
+        <!-- VALORES -->
+        <h3>Valores</h3>
+        <p>
+          Ética, Qualidade, Parcerias Duradouras, Compromisso com o Cliente, Eficiência Logística, Sustentabilidade e Profissionalismo.
+        </p>
+
     </div>
 
     <!-- Imagem -->
@@ -101,7 +136,7 @@
 </section>
 
 <!-- ================= PRODUTOS ================= -->
-<section class="produtos">
+<section class="produtos" id="produtos">
 
   <!-- Título -->
   <div class="produtos-titulo">
@@ -137,6 +172,73 @@
   </div>
 
 </section>
+
+<!-- ================= PARCEIROS ================= -->
+<section class="parceiros" id="parceiros">
+
+  <!-- Título -->
+  <div class="parceiros-titulo">
+    <span class="linha"></span>
+    <h2>Nossos Parceiros</h2>
+    <span class="linha"></span>
+  </div>
+
+  <!-- Logos -->
+  <div class="parceiros-logos">
+
+    <img src="assets/parceiro1.jpeg"alt="Frigoraça">
+    <img src="assets/parceiro2.jpg" alt="Carolina Black">
+    <img src="assets/parceiro3.avif"alt="3GFOODS">
+    <img src="assets/parceiro4.jpg" alt="Sansul">
+
+  </div>
+
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section class="contato" id="contato">
+
+  <!-- Título -->
+  <div class="contato-titulo">
+    <span class="linha"></span>
+    <h2>Entre em Contato</h2>
+    <span class="linha"></span>
+  </div>
+
+  <div class="contato-container">
+
+    <!-- LADO ESQUERDO -->
+    <div class="contato-info">
+
+      <a href="#" class="btn">Falar no WhatsApp</a>
+
+      <div class="contato-detalhes">
+        <p>📞 (15) 99999-9999</p>
+        <p>✉️ contato@nextbeef.com</p>
+      </div>
+
+    </div>
+
+    <!-- LADO DIREITO (FORMULÁRIO) -->
+    <form class="contato-form">
+
+      <input type="text" placeholder="Nome" required>
+      <input type="text" placeholder="Empresa">
+      <textarea placeholder="Mensagem" rows="4"></textarea>
+
+      <button type="submit" class="btn">Enviar</button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>Next Beef © 2024 - Todos os direitos reservados</p>
+</footer>
   <!-- Script JS externo -->
   <script src="script.js"></script>
 
