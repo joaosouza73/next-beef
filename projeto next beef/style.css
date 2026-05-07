@@ -474,9 +474,10 @@ body {
 /* CONTAINER */
 .contato-container {
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
 }
 
 
@@ -487,11 +488,14 @@ body {
 
 .contato-detalhes {
   margin-top: 30px;
-  color: #ccc;
 }
 
 .contato-detalhes p {
-  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 15px;
+
+  font-family: 'Inter', sans-serif;
 }
 
 
